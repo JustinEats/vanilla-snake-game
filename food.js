@@ -12,8 +12,11 @@ export function update() {
 }
 
 export function draw(gameBoard) {
-	//Creates your snake
-	const foodElement = document.createElement('div');
+	const foodElement = document.createElement('img');
+	foodElement.setAttribute(
+		'src',
+		'https://toppng.com/uploads/preview/free-png-mickey-mouse-head-png-images-transparent-mickey-mouse-face-115630667651xrpqbjewz.png'
+	);
 	foodElement.style.gridRowStart = food.y;
 	foodElement.style.gridColumnStart = food.x;
 	foodElement.classList.add('food');
